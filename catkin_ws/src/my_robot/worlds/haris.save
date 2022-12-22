@@ -158,38 +158,6 @@
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
       </model>
-      <model name='my_ball'>
-        <pose frame=''>4.81134 -2.46501 0.1 0 -0 0</pose>
-        <scale>1 1 1</scale>
-        <link name='link_0'>
-          <pose frame=''>4.81134 -2.46501 0.1 0 -0 0</pose>
-          <velocity>0 0 0 0 -0 0</velocity>
-          <acceleration>0 0 0 0 -0 0</acceleration>
-          <wrench>0 0 0 0 -0 0</wrench>
-        </link>
-      </model>
-      <model name='my_robot'>
-        <pose frame=''>0.003866 -0.001084 0.099994 2e-06 -4.6e-05 1.50986</pose>
-        <scale>1 1 1</scale>
-        <link name='left_wheel'>
-          <pose frame=''>-0.145855 0.008051 0.099994 3e-06 4.6e-05 1.50986</pose>
-          <velocity>-0.000126 -0.001805 -0.006108 0.017913 -0.001961 5.6e-05</velocity>
-          <acceleration>-0.00894 -0.001227 -9.67988 -0.122711 -0.790475 0.053441</acceleration>
-          <wrench>-0.044699 -0.006134 -48.3994 0 -0 0</wrench>
-        </link>
-        <link name='right_wheel'>
-          <pose frame=''>0.153588 -0.010219 0.099994 3e-06 0.003502 1.50986</pose>
-          <velocity>-0.000116 -0.001792 -0.006093 0.017918 -0.001874 3.4e-05</velocity>
-          <acceleration>0.008993 0.005769 -9.93141 -0.06354 -0.618936 0.008663</acceleration>
-          <wrench>0.044964 0.028847 -49.657 0 -0 0</wrench>
-        </link>
-        <link name='robot_footprint'>
-          <pose frame=''>0.003866 -0.001084 0.099994 2e-06 -4.6e-05 1.50986</pose>
-          <velocity>-0.000121 -0.001801 -0.006096 0.017926 -0.001741 5.6e-05</velocity>
-          <acceleration>-1.8e-05 -0.001504 -9.79626 -0.553852 -0.516891 0.271021</acceleration>
-          <wrench>-0.000265 -0.022713 -147.924 0 -0 0</wrench>
-        </link>
-      </model>
       <light name='sun'>
         <pose frame=''>0 0 10 0 -0 0</pose>
       </light>
@@ -976,7 +944,7 @@
           <geometry>
             <mesh>
               <scale>1 1 1</scale>
-              <uri>/home/workspace/catkin_ws/src/my_robot/meshes/hokuyo.dae</uri>
+              <uri>filename = “package://my_robot/meshes/hokuyo.dae”/uri>
             </mesh>
           </geometry>
           <material>
