@@ -52,9 +52,9 @@ void process_image_callback(const sensor_msgs::Image img)
 
      
     if (no_pixel_left > no_pixel_mid)
-       drive_robot (0.1, 0.1);
+       drive_robot (0.1, 0.05);
     else if (no_pixel_right > no_pixel_mid)
-       drive_robot (0.1, -0.1);
+       drive_robot (0.1, -0.05);
     else if (no_pixel_mid != 0)
        drive_robot (0.2, 0.0);
     else 
